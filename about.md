@@ -5,4 +5,4 @@ permalink: /about/
 tags: about
 ---
 
-Certified SysAdmin | DevOps Support Engineer
+Certified SysAdmin & DevOps Support Engineer
