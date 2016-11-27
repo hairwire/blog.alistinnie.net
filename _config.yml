@@ -3,7 +3,7 @@ title:       hairwire's notes
 email:       alistinnie@gmail.com
 author:      Ali Tukimin
 description: "hairwire's notes."
-baseurl:     "/hairwire.github.io"
+baseurl:     ""
 url:         "http://hairwire.github.com"
 date_format: "%b %-d, %Y"
 
