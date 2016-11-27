@@ -107,3 +107,7 @@ gem install puppet-lint
 And we're all set.
 
 To initiate the project, simply `mux puppet-dev`. One command to rule them all. :)
+
+And of course, materials used are available on [GitHub](https://github.com/hairwire/puppet-develop/tree/module04-tmux).
+
+Later!
