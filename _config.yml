@@ -1,6 +1,6 @@
 # Site settings
 title:       hairwire's notes
-email:       alistinnie@gmail.com
+email:       
 author:      Ali Tukimin
 description: "hairwire's notes."
 baseurl:     ""
@@ -46,7 +46,7 @@ github_username: hairwire
 bitbucket_username:
 stackoverflow_id:
 twitter_username: alistinnie
-skype_username:
+skype_username: ali.tukimin
 steam_nickname: 
 google_plus_id:
 linkedin_username:
