@@ -10,8 +10,6 @@ published: true
 
 So, I've decided to actually learn Puppet by developing Puppet modules locally on my workstation. The easiest way to go about that is by running the development environment locally with Vagrant (and Virtualbox).
 
-I signed up [Pluralsight](pluralsight.com) course titled [Building, Testing, and Deploying Professional Puppet Modules](https://app.pluralsight.com/library/courses/professional-puppet-modules-building-testing-deploying) by [Will Button](https://github.com/rekibnikufesin). This is actually a great course if you want to start hacking your way into Puppet.
-
 ### Getting started
 
 So here's a list of things that I'm going to perform to get up and running.
