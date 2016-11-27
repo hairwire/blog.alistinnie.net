@@ -17,7 +17,7 @@ So here's a list of things that I'm going to perform to get up and running.
 - Install and configure tmux
 - Install tmuxinator
 - Configure project
-- Add puppet syntax highlighting to atom
+- Add puppet syntax highlighting to [atom](https://atom.io/)
 - Add puppet linting support to atom
 
 ### Installing tmux and configure tmuxinator
@@ -96,7 +96,7 @@ All of the Vagrant stuff in there are configured with a customized `Vagrantfile`
 
 ### Add puppet syntax highlighting and puppet linting to atom
 
-This is actually the easiest part. Just search for `language-puppet` & `linter` in atom packages listings and install them.
+This is actually the easiest part. Just search for `language-puppet` & `linter` in [atom packages](https://atom.io/packages) listings and install them.
 
 An additional step would be to install `puppet-lint` gem:
 
