@@ -1,9 +1,9 @@
 # Site settings
 title:       hairwire's notes
-email:       alistinnie@gmail.com
+email:       
 author:      Ali Tukimin
 description: "hairwire's notes."
-baseurl:     "/hairwire.github.io"
+baseurl:     ""
 url:         "http://hairwire.github.com"
 date_format: "%b %-d, %Y"
 
@@ -20,7 +20,7 @@ bing_verification:
 animated:             false
 show_related_posts:   false
 show_post_footers:    false
-show_social_icons:    false
+show_social_icons:    true
 ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
@@ -42,12 +42,12 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: hairwire
 bitbucket_username:
 stackoverflow_id:
-twitter_username:
-skype_username:
-steam_nickname:
+twitter_username: alistinnie
+skype_username: ali.tukimin
+steam_nickname: 
 google_plus_id:
 linkedin_username:
 angellist_username:

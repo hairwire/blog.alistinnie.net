@@ -1,10 +1,18 @@
 ---
 layout:     post
+<<<<<<< HEAD
 title:      Automating Puppet development environment with tmuxinator
 date:       2016-11-27 22:23:00
 summary:  Bringing up Puppet development environment on Vagrant with the power of tmux
 categories: [ Vagrant, tmux, tmuxinator, atom ]
 published: False
+=======
+title:      Hello World
+date:       2016-11-27 1:20:00
+summary:  Well, hello.
+categories: Hello
+published: true
+>>>>>>> 102c6844043a4b932bcf8c8a1834b96307f2e0cf
 ---
 
 So, I've decided to actually learn Puppet by developing Puppet modules locally on my workstation. The easiest way to go about that is by running the development environment locally with Vagrant (and Virtualbox).
