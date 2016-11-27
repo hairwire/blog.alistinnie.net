@@ -5,7 +5,7 @@ title:      Automating Puppet development environment with tmuxinator
 date:       2016-11-27 22:23:00
 summary:  Bringing up Puppet development environment on Vagrant with the power of tmux
 categories: [ Vagrant, tmux, tmuxinator, atom ]
-published: False
+published: true
 =======
 title:      Hello World
 date:       2016-11-27 1:20:00
