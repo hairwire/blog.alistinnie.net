@@ -2,7 +2,7 @@
 
 [pixyll.com](http://www.pixyll.com)
 
-![Pixyll screenshot](https://cloud.githubusercontent.com/assets/1424573/3847467/134aa236-1e66-11e4-8421-4e8c122118dc.png)
+![Pixyll screenshot](./screenshot.png)
 
 Pixyll is a simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff. It's mobile _first_, fluidly responsive, and delightfully lightweight.
 
@@ -24,22 +24,14 @@ $ gem install bundler # If you don't have bundler installed
 $ bundle install
 ```
 
-If you don't want to install anything in your local machine, you can create a free development environment for this Pixyll project in the cloud on [Nitrous.io](https://www.nitrous.io) by clicking the button below.
-
-<a href="https://www.nitrous.io/quickstart">
-  <img src="https://nitrous-image-icons.s3.amazonaws.com/quickstart.png" alt="Nitrous Quickstart" width=142 height=34>
-</a>
-
-In the IDE, start Pixyll via `Run > Start Pixyll` and access your site via `Preview > 3000`.
-
 #### Verify your Jekyll version
 
-It's important to also check your version of Jekyll since this project uses Native Sass which
-is [only supported by 2.0+](http://jekyllrb.com/news/2014/05/06/jekyll-turns-2-0-0/).
+It's important to also check your version of Jekyll since this project uses new `baseurl` features that are [only supported in 3.3+](https://jekyllrb.com/news/2016/10/06/jekyll-3-3-is-here/).
 
 ### Fork, then clone
 
 Fork the repo, and then clone it so you've got the code locally.
+
 
 ### Modify the `_config.yml`
 
@@ -106,8 +98,8 @@ You will also need to tweak the header include `/{{ site.baseurl }}`:
 <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="{{ site.url }}/{{ site.baseurl }}">{{ site.title }}</a>
-      <nav class="site-nav right">
+      <a href="{{ "/" | relative_url }}" class="site-title">{{ site.title }}</a>
+      <nav class="site-nav">
         {% include navigation.html %}
       </nav>
     </div>
@@ -122,6 +114,7 @@ A relevant Jekyll Github Issue: <https://github.com/jekyll/jekyll/issues/332>
 The contact form uses <http://formspree.io>. It will require you to fill the form out and submit it once, before going live, to confirm your email.
 
 More setup instructions and advanced options can be found at [http://formspree.io](http://formspree.io/)
+
 
 ### Disqus
 
@@ -221,3 +214,7 @@ There may be merge conflicts, so be sure to fix the files that git lists if they
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## Forking
+
+There is a [guide to forking Pixyll](http://pixyll.com/jekyll/pixyll/2019/01/26/guide-to-forking-pixyll/).
