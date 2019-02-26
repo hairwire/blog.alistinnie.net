@@ -1,23 +1,14 @@
 ---
 layout:     post
-<<<<<<< HEAD
-title:      Automating Puppet development environment with tmuxinator
+title:      Automating Puppet development environment
 date:       2016-11-27 22:23:00
 summary:  Bringing up Puppet development environment on Vagrant with the power of tmux
-categories: [ Vagrant, tmux, tmuxinator, atom ]
-published: False
-=======
-title:      Hello World
-date:       2016-11-27 1:20:00
-summary:  Well, hello.
-categories: Hello
+category: development
+tags: [ Vagrant, tmux, tmuxinator, atom, puppet]
 published: true
->>>>>>> 102c6844043a4b932bcf8c8a1834b96307f2e0cf
 ---
 
 So, I've decided to actually learn Puppet by developing Puppet modules locally on my workstation. The easiest way to go about that is by running the development environment locally with Vagrant (and Virtualbox).
-
-I signed up [Pluralsight](pluralsight.com) course titled [Building, Testing, and Deploying Professional Puppet Modules](https://app.pluralsight.com/library/courses/professional-puppet-modules-building-testing-deploying) by [Will Button](https://github.com/rekibnikufesin). This is actually a great course if you want to start hacking your way into Puppet.
 
 ### Getting started
 
@@ -26,7 +17,7 @@ So here's a list of things that I'm going to perform to get up and running.
 - Install and configure tmux
 - Install tmuxinator
 - Configure project
-- Add puppet syntax highlighting to atom
+- Add puppet syntax highlighting to [atom](https://atom.io/)
 - Add puppet linting support to atom
 
 ### Installing tmux and configure tmuxinator
@@ -105,7 +96,7 @@ All of the Vagrant stuff in there are configured with a customized `Vagrantfile`
 
 ### Add puppet syntax highlighting and puppet linting to atom
 
-This is actually the easiest part. Just search for `language-puppet` & `linter` in atom packages listings and install them.
+This is actually the easiest part. Just search for `language-puppet` & `linter` in [atom packages](https://atom.io/packages) listings and install them.
 
 An additional step would be to install `puppet-lint` gem:
 
@@ -116,3 +107,7 @@ gem install puppet-lint
 And we're all set.
 
 To initiate the project, simply `mux puppet-dev`. One command to rule them all. :)
+
+And of course, materials used are available on [GitHub](https://github.com/hairwire/puppet-develop/tree/module04-tmux).
+
+Later!
