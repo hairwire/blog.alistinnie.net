@@ -5,7 +5,7 @@ permalink: /about/
 tags: about
 ---
 
-I started this blog with the intention of documenting stuff I learned or problems I encounter as a DevOps Support Engineer. Mostly it will serve as my personal notepad, easy to sift through later when needed.
+I started this blog with the intention of documenting technical solutions or problems I encounter everyday. Mostly it will serve as my personal notepad, easy to sift through later when needed.
 
 I like Pixyll because of its clean design. The "mobile's first" approach is actually the best part of it, since you don't have to worry about layouts at all when you open the site on your smartphone.
 
