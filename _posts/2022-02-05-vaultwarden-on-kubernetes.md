@@ -12,7 +12,7 @@ I've migrated to Bitwarden Free version back in March 2021 after Lastpass [chang
 
 Learning Kubernetes at work made me want to take it up a notch by hosting it myself on Kubernetes managed platform as a start. I chose Civo because they offer 250 USD free credit if you sign up and you can have your managed Kubernetes cluster for as little as 5 USD (we'll see!).
 
-Bitwarden offers their own implementation if you want to self-host the server here: https://github.com/bitwarden/server. I however attracted to this exciting alternative implementation of the Bitwarden API server written in Rust which supposedly made it super light-weight and does not use a lot of resources to run.
+Bitwarden offers their own implementation if you want to self-host the server [here](https://github.com/bitwarden/server). I however attracted to this exciting alternative implementation of the Bitwarden API server written in Rust which supposedly made it super light-weight and does not use a lot of resources to run.
 
 The project is called [Vaultwarden](https://github.com/dani-garcia/vaultwarden). It's not an official one but super interesting nonetheless.
 
@@ -20,7 +20,7 @@ The project is called [Vaultwarden](https://github.com/dani-garcia/vaultwarden).
 
 So the first step after signing up to Civo is to launch a cluster. It's super straightforward and doesn't require a lot of effort, you can launch your own cluster in less than 10 minutes.
 
-You can read more about it here: https://www.civo.com/docs/quick-start/600
+You can read more about it [here](https://www.civo.com/docs/quick-start/600).
 
 Civo has their own marketplace for installing applications when you launch a cluster, so I've picked Traefik for exposing the Vaultwarden [Ingress service](https://kubernetes.io/docs/concepts/services-networking/ingress/) and metrics-server for basic cluster metrics (nodes CPU & memory usage).
 
@@ -144,7 +144,7 @@ kubectl get certificate wildcard-certificate -n cert-manager
 
 ## Installing Vaultwarden on the Kubernetes cluster with Helm
 
-The easiest way to get Vaultwarden installed on the Kubernetes cluster is with Helm which is Kubernetes package manager and the repository that I'm using in this implementation is the one created by folks at k8s-at-home project: https://artifacthub.io/packages/helm/k8s-at-home/vaultwarden
+The easiest way to get Vaultwarden installed on the Kubernetes cluster is with Helm which is Kubernetes package manager and the repository that I'm using in this implementation is the one created by folks at [k8s-at-home project](https://artifacthub.io/packages/helm/k8s-at-home/vaultwarden).
 
 For this to work you need to install Helm locally. I'm using a Mac so it's as simple as running:
 
