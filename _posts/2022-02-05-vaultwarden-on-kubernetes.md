@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Bitwarden on Kubernetes with Vaultwarden
-date:       2022-02-05 17:45:00
+date:       2022-02-04 17:45:00
 summary:  Self-hosting Bitwarden on Civo Kubernetes with the alternative implementation of Bitwarden API written in Rust
 category: development
 tags: [ Kubernetes, Bitwarden, Vaultwarden]
@@ -16,7 +16,7 @@ Bitwarden offers their own implementation if you want to self-host the server he
 
 The project is called [Vaultwarden](https://github.com/dani-garcia/vaultwarden). It's not an official one but super interesting nonetheless.
 
-### Launching Kubernetes cluster on Civo
+## Launching Kubernetes cluster on Civo
 
 So the first step after signing up to Civo is to launch a cluster. It's super straightforward and doesn't require a lot of effort, you can launch your own cluster in less than 10 minutes.
 
@@ -25,14 +25,15 @@ You can read more about it here: https://www.civo.com/docs/quick-start/600
 Civo has their own marketplace for installing applications when you launch a cluster, so I've picked Traefik for exposing the Vaultwarden [Ingress service](https://kubernetes.io/docs/concepts/services-networking/ingress/) and metrics-server for basic cluster metrics (nodes CPU & memory usage).
 
 
-### Preparations before installing Vaultwarden
+## Preparations before installing Vaultwarden
 
-#### Create Persistent Volume Claim for SQLite backend for the Bitwarden secrets data
+### Create Persistent Volume Claim for SQLite backend for the Bitwarden secrets data
 
 This can be achieved by applying the following manifest:
 
 
-```apiVersion: v1
+```
+apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: civo-volume-vaultwarden
@@ -43,16 +44,18 @@ spec:
     requests:
       storage: 5Gi
 ```
-#### Add domain and use Civo to manage DNS records
+
+### Add domain and use Civo to manage DNS records
 
 I went ahead and added my domain into Civo and manage the DNS from there, which is one the pre-requisites of using the Okteto's Civo DNS Webhook in later step. I also created CNAME that points to the Kubernetes cluster DNS name (can be retrieved from the Kubernetes Dashboard in Civo)
 
-#### Install Cert-Manager
+
+### Install Cert-Manager
 
 Since I'm using Civo's managed Kubernetes service, this can directly be installed from the [Application Marketplace](https://www.civo.com/learn/deploying-applications-through-the-civo-kubernetes-marketplace) (or can be done when launching the cluster)
 
 
-#### Install Okteto's Civo DNS Webhook
+### Install Okteto's Civo DNS Webhook
 
 When getting a wildcard certificate, Let's Encrypt asks you to prove that you control the DNS for your domain name by putting a specific value in a TXT record under that domain name. This is known as a DNS01 challenge. cert-manager has support for a few providers out of the box, which you can extend via Webhooks. cert-manager doesn't support Civo out of the box (or at least I wasn't successful with another route I followed), so I went ahead and created one.
 
@@ -73,7 +76,7 @@ cert-manager-webhook-8f5767998-qlx8s                      1/1     Running   0   
 cert-manager-cainjector-5fb5c99bf5-vc7ht                  1/1     Running   10         4d19h
 ```
 
-#### Configuring the DNS issuer
+### Configuring the DNS issuer
 
 Create a secret in your cluster using the command below:
 
@@ -139,7 +142,7 @@ To check the status of the requested certificate, we can run the following:
 kubectl get certificate wildcard-certificate -n cert-manager
 ```
 
-### Installing Vaultwarden on the Kubernetes cluster with Helm
+## Installing Vaultwarden on the Kubernetes cluster with Helm
 
 The easiest way to get Vaultwarden installed on the Kubernetes cluster is with Helm which is Kubernetes package manager and the repository that I'm using in this implementation is the one created by folks at k8s-at-home project: https://artifacthub.io/packages/helm/k8s-at-home/vaultwarden
 
