@@ -4,7 +4,7 @@ email:
 author:      Ali Tukimin
 description: "hairwire's notes."
 baseurl:     ""
-url:         "http://hairwire.github.com"
+url:         "https://hairwire.github.io/blog.alistinnie.net/"
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
