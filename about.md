@@ -10,4 +10,4 @@ I like Pixyll because of its clean design. The "mobile's first" approach is actu
 
 Say hello if you want to get in touch or you could reach me on Twitter [@alistinnie](https://twitter.com/alistinnie)
 
-Laters!
+Later!
